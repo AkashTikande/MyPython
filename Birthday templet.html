@@ -1,0 +1,45 @@
+<!--implement code to get, user input birthday date and time format -->
+
+<!--fix-it need for proper execution of programme templet -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!--specifies character encoding for the document specifies with utf-8,
+                          supports wide renge iof characters from various language.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--set yhw width of templet with device width-->
+    <link rel="stylesheet" href="styles.css"> <!--this lik' s css code file written with script.css Extent to script.html file-->
+    <title>Birthday Countdown</title>
+</head>
+<div class="countdown-container">
+    <h1>Birthday Countdown</h1>
+    <div id="confetti" class="container"></div> <!--displays the animation when countdown reaches to zero-->
+    <div class="input-container">  <!-- container for user input-->
+        <input type="date" id="birthday-input"> <!-- to get user input date-->
+
+        <input type="time" id="time-input">    <!--  to get time input-->
+
+        <button id="start-countdown">Start Countdown</button>
+    </div>
+    <div class="countdown" id="countdown"> <!--container for displaying countdown-->
+        <div class="countdown-item">
+            <span id="days">00</span>  <!--to display no. of days in countdown-->
+            <p>Days</p>
+        </div>
+        <div class="countdown-item">
+            <span id="hours">00</span>
+            <p>Hours</p>
+        </div>
+        <div class="countdown-item">
+            <span id="minutes">00</span>
+            <p>Minutes</p>
+        </div>
+        <div class="countdown-item">
+            <span id="seconds">00</span>
+            <p>Seconds</p>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>  <!--link javascript file with html file saved  with script.js extent -->
+</body>
+</html>
